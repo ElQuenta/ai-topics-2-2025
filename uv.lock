@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.14'",
@@ -19,6 +19,8 @@ source = { virtual = "2.tools" }
 dependencies = [
     { name = "fastapi", extra = ["standard"] },
     { name = "motor" },
+    { name = "numpy" },
+    { name = "pillow" },
     { name = "pymongo" },
     { name = "uvicorn" },
 ]
@@ -27,6 +29,8 @@ dependencies = [
 requires-dist = [
     { name = "fastapi", extras = ["standard"], specifier = ">=0.116.1" },
     { name = "motor", specifier = ">=3.7.1" },
+    { name = "numpy", specifier = ">=2.3.3" },
+    { name = "pillow", specifier = ">=11.3.0" },
     { name = "pymongo", specifier = ">=4.15.1" },
     { name = "uvicorn", specifier = ">=0.35.0" },
 ]
